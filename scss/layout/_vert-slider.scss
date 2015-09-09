@@ -1,0 +1,73 @@
+.Vwidget {
+  margin: 0;
+  padding: 30px;
+  width: 100%;
+  border: 3px solid #75E1DB;
+  background: rgba(0, 174, 239, 0.38);
+  @include border-radius(10px);
+  position: relative;
+}
+
+a.up, a.down {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top:50%;
+}
+
+a.up {
+  padding-bottom: 2px;
+  @include oneline-sprite-box($icons, u-button);
+  margin-top:-16px;
+}
+
+a.down {
+  padding-top: 2px;
+  @include oneline-sprite-box($icons, d-button);
+  margin-top:2px;
+}
+
+.VjCarouselLite {
+  margin: 0;
+  padding: 0;
+}
+
+.VjCarouselLite li {
+  overflow: hidden;
+  float: none;
+  display: block;
+  padding: 0;
+  text-align: center;
+  height: 180px;
+}
+
+.VjCarouselLite li > div {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 4px;
+  height: 100px;
+}
+
+.item {
+  display: table;
+  width: 100%;
+
+  .col-1 {
+    display: table-cell;
+    width: 20%;
+  }
+
+  .col-2 {
+    display: table-cell;
+    width: 50%;
+  }
+
+  .col-3 {
+    display: table-cell;
+    width: 30%;
+  }
+}
